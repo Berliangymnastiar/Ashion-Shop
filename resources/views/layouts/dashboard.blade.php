@@ -41,7 +41,7 @@
           <a href="{{ route('category.index') }}" class="list-group-item list-group-item-action {{ (request()->is('admin/categories*')) ? 'active' : ''  }}">
             Categories
           </a>
-          <a href="" class="list-group-item list-group-item-action {{ (request()->is('admin/transactions*')) ? 'active' : ''  }}">
+          <a href="{{ route('dashboard-transaction') }}" class="list-group-item list-group-item-action {{ (request()->is('admin/transactions*')) ? 'active' : ''  }}">
             Transactions
           </a>
           <a href="{{ route('user.index') }}" class="list-group-item list-group-item-action {{ (request()->is('admin/users*')) ? 'active' : ''  }}">
