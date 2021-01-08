@@ -21,7 +21,7 @@
                     <div class="card">
                         <div class="card-body">
                             <a href="{{ route('product.create') }}" class="btn btn-primary mb-3">
-                                + Tambah Product
+                                + Add New Products
                             </a>
                             <div class="table-responsive">
                                 <table class="table-hover scroll-horizontal-vertical w-100" id="crudTable">

@@ -35,13 +35,13 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label>Nama Kategori</label>
+                                    <label>Category Name</label>
                                     <input type="text" name="name" id="name" class="form-control" value="{{ $item->name }}" required> 
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label>Foto</label>
+                                    <label>Photos</label>
                                     <input type="file" name="photo" id="photo" class="form-control"> 
                                 </div>
                             </div>

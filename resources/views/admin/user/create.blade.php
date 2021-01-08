@@ -34,7 +34,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="form-group">
-                    <label>Nama User</label>
+                    <label>User name</label>
                     <input type="text" name="name" id="name" class="form-control" required> 
                 </div>
             </div>
@@ -46,7 +46,7 @@
             </div>
             <div class="col-md-12">
                 <div class="form-group">
-                    <label>Nomor Telepon</label>
+                    <label>Phone Number</label>
                     <input type="number" name="number_phone" id="number_phone" class="form-control" required> 
                 </div>
             </div>
