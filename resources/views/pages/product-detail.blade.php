@@ -12,8 +12,8 @@
         <div class="col-12">
             <nav>
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item">
-                        <a href="{{ route('home') }}">Home</a>
+                    <li class="breadcrumb-item mr-3">
+                        <a href="{{ route('home') }}">Home /</a>
                     </li>
                     <li class="breadcrumb-item active">
                         Products Details
@@ -34,7 +34,7 @@
                 alt="">
         </transition>
     </div>
-    <div class="col-lg-2">
+    <div class="col-lg-2 mt-4">
         <div class="row">
             <div class="col-3 col-lg-12 mt-2 mt-lg-0" v-for="(photo, index) in photos" :key="photo.id"
                 data-aos="zoom-in" data-aos-delay="100">

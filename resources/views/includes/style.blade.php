@@ -8,3 +8,4 @@
  <link rel="stylesheet" href="{{ url('/css/slicknav.min.css') }}" type="text/css">
  <link rel="stylesheet" href="{{ url('/css/style.css') }}" type="text/css">
  <link rel="stylesheet" href="{{ url('/style/main.css') }}" type="text/css">
+<link rel="stylesheet" href="{{ url('/vendor/fontawesome/css/all.css') }}" type="text/css">

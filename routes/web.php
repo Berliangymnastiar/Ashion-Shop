@@ -23,8 +23,8 @@ Route::get('/categories/{id}', 'CategoryController@detail')->name('categories-de
 Route::get('/details/{id}', 'ProductDetailController@index')->name('product-detail');
 Route::post('/details/{id}', 'ProductDetailController@add')->name('detail-add');
 
-Route::get('/checkout', 'CheckoutController@process')->name('checkout');
-Route::get('/checkout/callback', 'CheckoutController@callback')->name('midtrans-callback');
+Route::post('/checkout', 'CheckoutController@process')->name('checkout');
+Route::post('/checkout/callback', 'CheckoutController@callback')->name('midtrans-callback');
 
 
 // Route::get('/register/success', 'Auth\RegisterController')->name('register-success');

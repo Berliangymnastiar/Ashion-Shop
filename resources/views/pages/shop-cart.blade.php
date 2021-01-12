@@ -92,7 +92,7 @@
                   </div>
                 </div>
 
-                <form action="#" method="POST" id="locations" enctype="multipart/form-data">
+                <form action="{{ route('checkout') }}" method="POST" id="locations" enctype="multipart/form-data">
                 @csrf
                   <input type="hidden" name="total_price" value="{{ $totalPrice }}">
                     <div class="row mb-2" data-aos="fade-up" data-aos-delay="200">
@@ -135,7 +135,7 @@
                       <div class="col-md-6">
                         <div class="form-group">
                           <label for="country">Country</label>
-                          <input type="text" class="form-control" id="country" name="country" value="Indonesia">
+                          <input type="text" class="form-control" id="country" name="country" value="Indonesia" readonly
                         </div>
                       </div>
                       <div class="col-md-6">

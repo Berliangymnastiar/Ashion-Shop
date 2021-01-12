@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class TransactionDetail extends Model
 {
-    protected $fillable = ['transaction_id', 'products_id', 'price', 'shipping_status', 'resi', 'code'];
+    protected $fillable = ['transaction_id', 'products_id', 'price', 'shipping_status', 'resi', 'code', 'users_id'];
 
     protected $hidden = [];
 
