@@ -51,6 +51,9 @@ class CheckoutController extends Controller
             ]);
         }
 
+        // Delete cart data
+        Cart::where('users_id', Auth::user()->id)->delete();
+
         //Konfigurasi Midtrans
 
         // Set your Merchant Server Key

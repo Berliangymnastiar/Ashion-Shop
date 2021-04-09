@@ -40,13 +40,13 @@
                               <img src="{{ Storage::url($transaction->product->galleries->first()->photos ?? '') }}" class="w-50">
                             </div>
                             <div class="col-md-4">
-                              $transaction->product->name
+                              {{ $transaction->product->name }}
                             </div>
                             <div class="col-md-3">
-                              $transaction->product->author
+                              {{ $transaction->product->author }}
                             </div>
                             <div class="col-md-3">
-                              $transaction->created_at
+                              {{ $transaction->created_at }}
                             </div>
                             <div class="col-md-1 d-none d-md-block">
                               <img src="/images/dashboard-arrow-right.svg" alt="">
@@ -58,20 +58,20 @@
                     </div>
                     <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                       @foreach ($buyTransactions as $transaction)
-                      <a href="{{ route('dashboard-transaction-details') }}" class="card card-list d-block">
+                      <a href="#" class="card card-list d-block">
                         <div class="card-body">
                           <div class="row">
                             <div class="col-md-1">
                               <img src="{{ Storage::url($transaction->product->galleries->first()->photos ?? '') }}" class="w-50">
                             </div>
                             <div class="col-md-4">
-                              $transaction->product->name
+                             {{ $transaction->product->name}}
                             </div>
                             <div class="col-md-3">
-                              $transaction->product->author
+                             {{ $transaction->product->author}}
                             </div>
                             <div class="col-md-3">
-                              $transaction->created_at
+                              {{ $transaction->created_at }}
                             </div>
                             <div class="col-md-1 d-none d-md-block">
                               <img src="/images/dashboard-arrow-right.svg" alt="">

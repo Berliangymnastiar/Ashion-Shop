@@ -135,7 +135,7 @@
                       <div class="col-md-6">
                         <div class="form-group">
                           <label for="country">Country</label>
-                          <input type="text" class="form-control" id="country" name="country" value="Indonesia" readonly
+                          <input type="text" class="form-control" id="country" name="country" value="IDN" readonly>
                         </div>
                       </div>
                       <div class="col-md-6">

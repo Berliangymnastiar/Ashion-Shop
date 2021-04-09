@@ -22,8 +22,6 @@ Route::get('/categories', 'CategoryController@index')->name('category');
 Route::get('/categories/{id}', 'CategoryController@detail')->name('categories-detail');
 Route::get('/details/{id}', 'ProductDetailController@index')->name('product-detail');
 Route::post('/details/{id}', 'ProductDetailController@add')->name('detail-add');
-
-Route::post('/checkout', 'CheckoutController@process')->name('checkout');
 Route::post('/checkout/callback', 'CheckoutController@callback')->name('midtrans-callback');
 
 
@@ -32,6 +30,8 @@ Route::post('/checkout/callback', 'CheckoutController@callback')->name('midtrans
 Route::group(['middleware' => 'auth'], function () {
     Route::get('/cart', 'CartController@index')->name('shop-cart');
     Route::delete('/cart/{id}', 'CartController@delete')->name('shop-cart-delete');
+    Route::post('/checkout', 'CheckoutController@process')->name('checkout');
+    
 });
 
 // Route::get('/home', 'HomeController@index')->name('home');
